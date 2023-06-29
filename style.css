@@ -1,0 +1,89 @@
+body{
+    font-family: 'Red Hat Display', sans-serif;
+
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);/*pale blue*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big_txt{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%); /*dark blue*/
+
+    text-align: center;
+}
+
+.normal_txt{
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%); /*desaturated blue*/
+}
+
+.card{
+    width: 85vw;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    border-radius: 20px;
+}
+
+.card_content{
+    display: flex;
+    flex-direction: column;
+
+    /*this makes elements space evenly in the card*/
+    height: 100%;
+    justify-content: space-evenly;
+
+    padding: 20px;
+}
+
+.girl_img{
+
+    border-radius: 20px 20px 0 0;
+}
+
+.description{
+    text-align: center;
+}
+
+.plan{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: hsl(225, 100%, 98%);/*very pale blue*/
+}
+
+.plan img{
+    grid-area: 1/1/3/2;
+}
+
+.plan .normal_txt{
+    grid-area: 1/2/2/3;
+}
+
+.plan .price{
+    grid-area: 2/2/3/3;
+}
+
+.plan a{
+    grid-area: 1/3/3/4;
+}
+
+.pay_button{
+    background-color: hsl(245, 75%, 52%); /*Bright blue*/
+    color: white;
+}
+
+.cancel_button{
+    color: hsl(224, 23%, 55%); /*dark blue*/
+    font-weight: 700;
+}

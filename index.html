@@ -8,30 +8,38 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <!--importing Google font-->
+  <!--Importing Google font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <!--Linking css sheets-->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
   <main>
     <section class="card">
-      <img src="images/illustration-hero.svg" alt="">
-      <h1>
-        Order Summary
-      </h1>
-      <h2>
-        You can now listen to millions of songs, audiobooks, and podcasts on any 
-        device anywhere you like!
-      </h2>
-    
-      <p>Annual Plan</p>
-      <p>$59.99/year</p>
-      <a href="http://">Change</a>
-      
-      <input type="button" value="Proceed to Payment">
-      <input type="button" value="Cancel Order">
+      <img class="girl_img" src="images/illustration-hero.svg" alt="girl listening to music happily">
+      <div class="card_content">
+        <h1 class="big_txt">
+          Order Summary
+        </h1>
+        <h2 class="normal_txt description">
+          You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!
+        </h2>
+        <div class="plan">
+          <img src="images/icon-music.svg" alt="music icon">
+          <p class="normal_txt bold_txt">Annual Plan</p>
+          <p class="normal_txt price">$59.99/year</p>
+          <a href="http://">Change</a>
+        </div>
+        
+        <input class="pay_button" type="button" value="Proceed to Payment">
+        <input class="cancel_button" type="button" value="Cancel Order">
+      </div>
     </section>
   </main>
 
