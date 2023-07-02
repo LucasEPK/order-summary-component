@@ -26,7 +26,7 @@ body{
 
 .bold{
     font-weight: 900;
-    color: hsl(223, 47%, 23%);
+    color: hsl(223, 47%, 23%); /*dark blue*/
 }
 
 .card{
@@ -105,6 +105,8 @@ body{
     border: none;
     cursor: pointer;
     text-align: center;
+
+    transition: 0.4s;
 }
 
 .cancel_button{
@@ -116,6 +118,8 @@ body{
     border: none;
     cursor: pointer;
     text-align: center;
+
+    transition: 0.4s;
 }
 
 /*----------------------------DESKTOP VERSION-----------------------------------*/
@@ -140,5 +144,17 @@ body{
 
     .plan a{
         font-size: 0.9rem;
+    }
+
+    .plan a:hover{
+        text-decoration: none;
+    }
+
+    .pay_button:hover{
+        background-color: hsl(244, 76%, 69%); /*Bright blue*/
+    }
+
+    .cancel_button:hover{
+        color: hsl(223, 47%, 23%);
     }
 }
