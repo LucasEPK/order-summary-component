@@ -125,6 +125,10 @@ body{
 /*----------------------------DESKTOP VERSION-----------------------------------*/
 
 @media(min-width: 800px){
+    body{
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+
     .big_txt{
         font-size: 1.8rem;
     }
